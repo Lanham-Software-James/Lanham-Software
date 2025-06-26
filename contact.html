@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Lanham Software LLC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,600,500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="assets/logo.svg" alt="Lanham Software LLC Logo" class="nav-logo-img"></a>
+            </div>
+            <button class="nav-toggle" aria-label="Open navigation menu">
+                <svg class="hamburger-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="7" width="32" height="3.5" rx="1.5" fill="white"/>
+                    <rect y="14" width="32" height="3.5" rx="1.5" fill="white"/>
+                    <rect y="21" width="32" height="3.5" rx="1.5" fill="white"/>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-banner contact-banner">
+            <h1>Contact Us</h1>
+            <p>Ready to start your project or have a question? Reach out today.</p>
+        </section>
+        <section class="contact-content">
+            <div class="contact-form-wrapper">
+                <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                    <div id="form-status"></div>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Business Info</h2>
+                <p><strong>Email:</strong></p>
+                <p><strong>Phone:</strong> </p>
+                <p><strong>Location:</strong> Erie, PA</p>
+            </div>
+        </section>
+        <section class="cta-section">
+            <a href="services.html" class="cta-btn">Explore Our Services</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> Lanham Software LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
