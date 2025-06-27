@@ -211,7 +211,7 @@ nav ul li a:hover, nav ul li a.active {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(30,58,92,0.08);
-    padding: 2.5rem 2rem;
+    padding: 0.25rem 1.5rem;
 }
 .about-content h2 {
     color: #1e3a5c;
