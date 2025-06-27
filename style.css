@@ -419,8 +419,6 @@ footer {
     }
 }
 @media (max-width: 600px) {
-    .nav-logo {
-    }
     .nav-logo-img {
         margin-right: 0.7rem;
     }
