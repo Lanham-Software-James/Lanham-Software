@@ -13,6 +13,16 @@ $(document).ready(function() {
         $('.nav-overlay').removeClass('active');
     });
 
+    // Phone number auto-format
+    $('#phone').on('input', function() {
+        let value = $(this).val().replace(/\D/g, '');
+        if (value.length > 0) value = '(' + value;
+        if (value.length > 4) value = value.slice(0, 4) + ') ' + value.slice(4);
+        if (value.length > 9) value = value.slice(0, 9) + ' - ' + value.slice(9);
+        value = value.slice(0, 16); // Max length for (XXX) XXX - XXXX
+        $(this).val(value);
+    });
+
     // Smooth scroll for navigation
     $('nav ul li a, .nav-links a').on('click', function(e) {
         var target = $(this.getAttribute('href'));
