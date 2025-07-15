@@ -1,0 +1,35 @@
+/* ========================================
+   GUESS THE NUMBER GAME STYLES
+   This file makes our game look pretty!
+   ======================================== */
+
+/* This styles the number input box where players type their guesses */
+#game-controls input[type="number"] {
+    padding: 7px 14px;           /* Adds space inside the box */
+    font-size: 1.3rem;           /* Makes the text bigger and easier to read */
+    width: 76px;                 /* Sets how wide the box is */
+    margin-right: 15px;          /* Adds space between the box and the button */
+    border-radius: 8px;          /* Makes the corners rounded (like a pillow) */
+    border: 1px solid #bbb;      /* Adds a light gray border around the box */
+}
+
+/* This styles the buttons (Try! and Restart buttons) */
+#game-controls button {
+    padding: 7px 22px;           /* Adds space inside the button */
+    font-size: 1.2rem;           /* Makes the button text bigger */
+    border-radius: 10px;         /* Makes the button corners very rounded */
+    border: none;                /* Removes the default button border */
+    background: #57b846;         /* Makes the button green */
+    color: #fff;                 /* Makes the text white */
+    font-weight: bold;           /* Makes the text bold (thicker) */
+    cursor: pointer;             /* Changes the mouse to a hand when you hover over it */
+}
+
+/* This styles the message area where the game talks to the player */
+#game-message {
+    display: block;              /* Makes this area take up its own line */
+    margin: 22px 0 0 0;          /* Adds space above the message */
+    font-size: 1.23rem;          /* Makes the message text bigger */
+    height: 2.2em;               /* Gives the message area a fixed height */
+    color: #274472;              /* Makes the text dark blue */
+}

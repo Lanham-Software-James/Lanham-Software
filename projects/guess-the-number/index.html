@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This section tells the web browser what kind of page this is -->
+    <meta charset="UTF-8" />
+    
+    <!-- These lines connect our page to the styling files (CSS) -->
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="slide-template.css">
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- This line connects our page to the JavaScript file that makes the game work -->
+    <script src="index.js"></script>    
+</head>
+
+<body>
+    <!-- This is the main container that holds all our content -->
+    <div class="content">
+        <!-- This is the title of our game -->
+        <h2>Let's Play: Guess the Number!</h2>
+        
+        <!-- This creates a line to separate the title from the game -->
+        <hr>
+        
+        <!-- This is the game area where players will interact -->
+        <div id="game-controls">
+            <!-- These are the instructions for the player -->
+            <p>I'm thinking of a number between 1 and 20.<br>
+            Can you guess it? Type a number and click <em>Try!</em></p>
+            
+            <!-- This is where the player types their guess -->
+            <input type="number" id="guess-input" min="1" max="20">
+            
+            <!-- This button lets the player submit their guess -->
+            <button id="guess-btn">Try!</button>
+            
+            <!-- This is where the game will show messages to the player -->
+            <span id="game-message"></span><br>
+            
+            <!-- This button appears when the game is over to start a new game -->
+            <button id="reset-game" style="margin-top:18px;display:none;">Restart</button>
+        </div>
+    </div>
+</body>
+</html>
